@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Opening.css";
 import { Link } from 'react-router-dom';
+import { storage } from '../utils/firebaseConfig.js';
 
 export default function Opening() {
     return (
