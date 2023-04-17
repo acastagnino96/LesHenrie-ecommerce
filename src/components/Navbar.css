@@ -1,0 +1,87 @@
+.nvbar{
+    background-color: #DC3A38;
+    min-height: 80px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.menuInicio{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.menuInicio .linkTodos{
+    color: #fff !important;
+    margin-inline: 15px;
+    border-radius: 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.linkTodos:hover{
+    background-color: rgba(247, 218, 223, 0.904);
+    color: #DC3A38 !important;
+}
+
+#basic-nav-dropdown{
+    color: #fff !important;
+    border-radius: 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#basic-nav-dropdown:hover{
+    color: #DC3A38 !important;
+}
+
+.menuDropdown .dropdownText{
+    text-decoration: none;
+    color: #DC3A38 !important;
+}
+.dropdownText:hover{
+    background-color: rgba(247, 218, 223, 0.904) !important;
+}
+
+.logInExt{
+    border-radius: 25px;
+    height: 30px;
+    width: 95px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.logInExt .logInIcon{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff !important;
+}
+
+.cartGroup{
+    border-radius: 25px;
+    height: 30px;
+    width: 95px;
+    margin-top: 10px;
+    background-color: rgba(247, 218, 223, 0.904);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.cartGroup .cartIcon{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #DC3A38;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cartGroup .cartNumber{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #DC3A38;
+    font-size: 18px;
+}

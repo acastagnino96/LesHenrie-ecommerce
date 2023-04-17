@@ -1,0 +1,35 @@
+.productAmountContainer{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-top: 150px;
+}
+
+.productAmount{
+    font-size: 24px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+.botonContador{
+    background-color:  #DC3A38 !important;
+    border-radius: 25px !important;
+    margin-inline: 5px;
+    width: 50px;
+    border: none !important;
+}
+
+.agregarContador{
+    width: 150px;
+}
+
+@media (max-width: 1000px) {
+    .productAmountContainer{
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .agregarContador{
+        margin-top: 10px;
+    }
+}

@@ -7,9 +7,9 @@ const CartWidget = () => {
     const ctx = useContext(CartContext);
 
     return (
-        <Link to='/cart' style={{textDecoration: "none"}}>
-            <BsCart2 />
-            <button className="btn">{ctx.calcItemsQty()}</button>
+        <Link className="cartGroup" to='/cart' style={{textDecoration: "none"}}>
+            <BsCart2 className="cartIcon"/>
+            <button className="cartNumber btn">{ctx.calcItemsQty()}</button>
             </Link>
     );
 }

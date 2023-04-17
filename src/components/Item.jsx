@@ -1,24 +1,26 @@
 import React from 'react';
-import {ProductContainer, Image, Info, Icon} from "./styledComponents";
+import "./Item.css";
 import {Link} from "react-router-dom";
 
 const Item = ({ id, nombre, precio, stock, img }) => {
   return (
-    <ProductContainer>
-        <Image src={img} alt="" />
-        <Info>
-            <div>{nombre}</div>
-            <Icon>
+    <div className= "productContainer">
+      <div className="imgBox">
+        <img src={img} alt="" />
+      </div>
+        <div className="info">
+            <div id="iname">{nombre}</div>
+            <div className="icon" id="iprice">
                 <strong>$ {precio}</strong>
-            </Icon>
-            <Icon>
+            </div>
+            <div className="icon" id="istock">
                 {stock} unid.
-            </Icon>
-            <Icon style={{cursor: "pointer"}}>
-                    <Link to={`/item/${id}`}>Detalles</Link>
-            </Icon>
-        </Info>
-    </ProductContainer>
+            </div>
+            <div className="icon" id="idata" style={{cursor: "pointer"}}>
+                    <Link id="idataWord" to={`/item/${id}`}>Ver más</Link>
+            </div>
+        </div>
+    </div>
   );
 }
 

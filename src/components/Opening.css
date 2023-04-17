@@ -1,0 +1,109 @@
+.imagenPpal{
+    background-image: url(../src/assets/images/Bakery.jpg);
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -110px;
+}
+
+.centralLogo{
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+
+.aboutUs{
+    display: block;
+}
+
+.opening h1{
+    font-family: 'Iowan Old Style';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 62px;
+    text-align: center;
+    color: #DC3A38;
+    margin-top: 200px;
+    margin-bottom: 60px;
+}
+
+.aboutUs{
+    align-items: center;
+    margin-inline: 16%;
+}
+
+.aboutUs img{
+    padding-inline: 50px;
+    padding-bottom: 50px;
+}
+
+.aboutUs p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #616161;
+}
+
+.aboutUs p span{
+    color: #DC3A38;
+}
+
+.redBar{
+    background-color: #DC3A38;
+    min-height: 150px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+    padding: 40px;
+}
+
+.redBar p{
+    font-family: 'Iowan Old Style';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    margin-inline: 4%;
+}
+
+.irALaTienda{
+    background-image: url(../src/assets/images/fondoTienda.png);
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.irALaTienda .btn{
+    display: block;
+    margin-inline: auto;
+    width: 250px;
+    height: 40px;
+    background-color: #DC3A38;
+    color: #fff;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btnHover:hover{
+    background-color: rgba(247, 218, 223, 0.904);
+    color: #DC3A38;
+}
+
+/* Responsive */
+@media (max-width: 580px) {
+    .aboutUs img {
+        width: 260px;
+        margin-inline: 0px;
+    }
+    .centralLogo{
+        width: 280px;
+    }
+    .opening h1{
+        margin-top: 100px;
+    }
+}

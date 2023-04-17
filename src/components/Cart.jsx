@@ -6,7 +6,7 @@ import {db} from '../utils/FirebaseConfig';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import { Link } from 'react-router-dom';
-import {ItemCart, Image, Info, Icon} from "./styledComponents";
+import "./Cart.css";
 
 const Cart = () => {
     const ctx = useContext(CartContext);
@@ -60,48 +60,48 @@ const Cart = () => {
 
     return (
       <>
-            Tu Carrito.
-                <br />
-                <Link to='/'>Continuar comprando</Link>
-                <br /><br />
-                {
-                  (ctx.cartList.length > 0)
-                  ? <Button onClick={ctx.removeList}>Eliminar todos los productos</Button>
-                  : <p>Carrito vacío</p>
-                }
+        <div className="carritoFondo">
+              <h1>Tu carrito</h1>
                 {
                   ctx.cartList.length > 0 &&
                   ctx.cartList.map(item => 
-                    <ItemCart>
-                        <Image src={item.imgItem} alt="" />
-                        <Info>
-                            <div>{item.titleItem}</div>
-                            <Icon>
-                                <strong>$ {item.costItem}</strong>
-                            </Icon>
-                            <Icon>
-                                <div>Cantidad: {item.qtyItem}</div>
-                            </Icon>
-                            <Icon>
-                                <div>Costo total: ${ctx.calcTotalPerItem(item.idItem)}</div>
-                            </Icon>
-                            <Button type="filled" onClick={() => ctx.deleteItem(item.idItem)}>DELETE</Button>
-                        </Info>
-                    </ItemCart>
+                    <div className="ItemCart">
+                        <div className="imgCartBox">
+                          <img className="imgCart" src={item.imgItem} alt="" />
+                        </div>
+                        <div className="infoCart">
+                            <div id="itemTitle">{item.titleItem}</div>
+                            <div className="iconCart">
+                                <div>Unidades: {item.qtyItem}</div>
+                            </div>
+                            <div className="iconCart">
+                                <strong>${ctx.calcTotalPerItem(item.idItem)}</strong>
+                            </div>
+                        </div>
+                            <Button className="btnEliminar" type="filled" onClick={() => ctx.deleteItem(item.idItem)}>Eliminar</Button>
+                    </div>
                   )
                 }
+              <div className="optionsCart flex-wrap">
+                <Link className="continuarComprando mt-2" to='/products'>Continuar comprando</Link>
+                {
+                  (ctx.cartList.length > 0)
+                  ? <Button className="btnEliminarTodos mt-2" onClick={ctx.removeList}>Eliminar todos los productos</Button>
+                  : <p id="carritoVacio">Tu carrito está vacío.</p>
+                }
+              </div>
                 {
                   ctx.cartList.length > 0 &&
                     <>
                     <div className="container">
                       <div className='product-cart row'>
-                        RESUMEN
-                      <p>TOTAL: $ {ctx.calcSubTotal()}</p>
-                      <Button onClick={createOrder}>Finalizar compra</Button>
+                      <p className='totalPrice'>TOTAL: $ {ctx.calcSubTotal()}</p>
+                      <Button onClick={createOrder} className="botonFinalizar">Finalizar compra</Button>
                       </div>
                     </div>
                     </>
                 }
+          </div>
       </>
     );
 }

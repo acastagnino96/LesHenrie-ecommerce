@@ -2,11 +2,11 @@ import React from 'react';
 import { useState, useContext } from 'react';
 import ItemCount from './ItemCount';
 import Button from 'react-bootstrap/Button';
-import {DetailContainer, WrapperDetail, ImgContainer, ImageDetail, InfoContainer, Title, Desc, Price} from "./styledComponents"
 import { CartContext } from './CartContext';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import { Link } from 'react-router-dom';
+import "./ItemDetail.css";
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState (0)
@@ -38,25 +38,25 @@ const ItemDetail = ({ item }) => {
         {
             item && item.img
             ? 
-            <DetailContainer>
-                <WrapperDetail>
-                    <ImgContainer>
-                        <ImageDetail src={item.img} />
-                    </ImgContainer>
-                    <InfoContainer>
-                        <Title>{item.nombre}</Title>
-                        <Desc>{item.tipo}</Desc>
-                        <Price>$ {item.precio}</Price>
-                        <Desc>{item.stock} unidades en stock</Desc>
-                    </InfoContainer>
+            <div>
+                <div className="wrapperDetail">
+                    <div className="imgContainer">
+                        <img className="imageDetail" src={item.img} />
+                    </div>
+                    <div className="infoContainer">
+                        <div className="titleDetail">{item.nombre}</div>
+                        <div className="descDetail">{item.tipo}</div>
+                        <div className="priceDetail">$ {item.precio}</div>
+                        <div className="descDetail">{item.stock} unidades en stock</div>
+                    </div>
                     {
                         itemCount === 0
                         ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
                         : <Link to='/cart' style={{textDecoration: "none"}}><Button>Ir al carrito</Button></Link>
                     }
-                </WrapperDetail>
-            </DetailContainer>
-            : <p>Cargando...</p>
+                </div>
+            </div>
+            : <p id="cargando">Cargando...</p>
         }
         </>
     );
