@@ -5,7 +5,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget';
 import {Link} from 'react-router-dom';
 import "./Navbar.css";
-import { storage } from '../utils/firebaseConfig.js';
 
 function BasicExample() {
   return (
