@@ -1,13 +1,12 @@
 import React from 'react';
 import "./Opening.css";
 import { Link } from 'react-router-dom';
-import centralLogo from "../src/assets/images/centralLogo.svg";
 
 export default function Opening() {
     return (
         <main className="opening">
             <div className="imagenPpal">
-                <img className="centralLogo" src = {centralLogo} alt="Logo"/>
+                <img className="centralLogo" src= "../src/assets/images/centralLogo.svg" alt="Logo"/>
             </div>
             <h1 id="nosotras">¿Quiénes somos?</h1>
             <div className="aboutUs d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-center">
