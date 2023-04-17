@@ -5,14 +5,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget';
 import {Link} from 'react-router-dom';
 import "./Navbar.css";
-import Logo from "../assets/images/Logo.png";
 
 function BasicExample() {
   return (
     <Navbar className="nvbar sticky-top" expand="lg">
       <Container className="d-block d-lg-flex">
         <Navbar.Brand as={Link} to="/">
-          <img src={Logo}  height={32}/>
+          <img src="../src/assets/images/Logo.png"  height={32}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='float-end'/>
         <Navbar.Collapse id="basic-navbar-nav" className='pb-4 pb-lg-0'>
