@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Opening.css";
 import { Link } from 'react-router-dom'
+import centralLogo from "../src/assets/images/centralLogo.svg";
 
 export default function Opening() {
     return (
