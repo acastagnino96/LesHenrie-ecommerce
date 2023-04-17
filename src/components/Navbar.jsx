@@ -12,7 +12,7 @@ function BasicExample() {
     <Navbar className="nvbar sticky-top" expand="lg">
       <Container className="d-block d-lg-flex">
         <Navbar.Brand as={Link} to="/">
-          <img src="leshenri-ecomm.appspot.com/Logo.png"  height={32}/>
+          <img src="https://firebasestorage.googleapis.com/v0/b/leshenri-ecomm.appspot.com/o/Logo.png?alt=media&token=ada4fb81-9ca7-4866-9e92-211392e0fa6d"  height={32}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='float-end'/>
         <Navbar.Collapse id="basic-navbar-nav" className='pb-4 pb-lg-0'>
