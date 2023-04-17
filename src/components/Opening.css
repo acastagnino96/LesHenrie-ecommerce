@@ -1,5 +1,5 @@
 .imagenPpal{
-    background-image: url(gs://leshenri-ecomm.appspot.com/Bakery.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/leshenri-ecomm.appspot.com/o/Bakery.jpg?alt=media&token=74c44ad3-3e78-4746-aa69-b635b2da28f8);
     height: 800px;
     width: 100%;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 }
 
 .irALaTienda{
-    background-image: url(../src/assets/images/fondoTienda.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/leshenri-ecomm.appspot.com/o/fondoTienda.png?alt=media&token=4d9a32cf-b7a1-40c1-8301-befa01e85a73);
     height: 600px;
     width: 100%;
     background-repeat: no-repeat;
