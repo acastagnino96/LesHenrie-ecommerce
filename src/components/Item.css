@@ -38,8 +38,8 @@
 }
 
 .imgBox img{
-    -webkit-mask-image: url(https://firebasestorage.googleapis.com/v0/b/leshenri-ecomm.appspot.com/o/Group1.png?alt=media&token=613d7f3a-8e94-45ee-938c-ec5d374d6f77);
-    mask-image: url(https://firebasestorage.googleapis.com/v0/b/leshenri-ecomm.appspot.com/o/Group1.png?alt=media&token=613d7f3a-8e94-45ee-938c-ec5d374d6f77);
+    -webkit-mask-image: url(../assets/images/Group1.png);
+    mask-image: url(../assets/images/Group1.png);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     width: 300px;
