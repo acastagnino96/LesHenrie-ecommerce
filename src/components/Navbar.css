@@ -85,3 +85,11 @@
     color: #DC3A38;
     font-size: 18px;
 }
+
+/* Responsive */
+@media (max-width: 990px) {
+    .linkTodos:hover{
+    background-color: none;
+    color: #FFF !important;
+    }
+}
