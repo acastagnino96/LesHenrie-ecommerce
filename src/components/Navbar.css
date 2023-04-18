@@ -89,7 +89,10 @@
 /* Responsive */
 @media (max-width: 990px) {
     .linkTodos:hover{
-    background-color: none;
+    background-color: #DC3A38;
+    color: #FFF !important;
+    }
+    #basic-nav-dropdown:hover{
     color: #FFF !important;
     }
 }
